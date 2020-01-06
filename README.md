@@ -39,6 +39,10 @@ Comando para instalar as bibliotecas JavaScript utilizadas.
 
 Coloca no ar em *modo desenvolvimento* a aplicação em https://localhost:3000.
 
+### npm run build
+
+Gera uma versão em *modo produção* da aplicação.
+
 ### npm run deploy
 
-Gera uma versão em *modo produção* da aplicação e publica ela na url **[inspiringQuotes-GraphQLServer](https://devpitsa.github.io/inspiringQuotes/)**.
+Publica a versão de produção na url **[inspiringQuotes-GraphQLServer](https://devpitsa.github.io/inspiringQuotes/)**.
