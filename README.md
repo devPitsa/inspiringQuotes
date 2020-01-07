@@ -27,7 +27,7 @@ O código fonte deste exercício está organizado da seguinte forma:
 
 ### git clone https://github.com/devPitsa/inspiringQuotes.git
 
-Tanto a aplicação para web quanto para mobile os comandos para desenvolvimento e build são os mesmos.
+## REACT
 
 Após entrar no diretório raiz /**react** executar os comandos abaixo
 
@@ -46,3 +46,18 @@ Gera uma versão em *modo produção* da aplicação.
 ### npm run deploy
 
 Publica a versão de produção na url **[inspiringQuotes-GraphQLServer](https://devpitsa.github.io/inspiringQuotes/)**.
+
+## REACT-NATIVE
+
+Após entrar no diretório raiz /**react-native** executar os comandos abaixo
+
+### npm install
+
+Comando para instalar as bibliotecas JavaScript utilizadas.
+
+### expo start -c
+
+Coloca no ar em *modo desenvolvimento* a aplicação com o Expo.
+
+- Ler o QRCODE gerado com a câmera do celular.
+- Você deve ter instalado no seu mobile o aplicativo Expo.
