@@ -3,6 +3,9 @@ import { View, Image,  StyleSheet, Text, TextInput, TouchableOpacity, Linking} f
 import image1 from '../assets/image1.png';
 import { withNavigation } from 'react-navigation';
 
+import api from '../services/api';
+
+
 class Logo extends Component {
     render() { 
         return (
@@ -21,8 +24,19 @@ function Login({ navigation })  {
     const  [email, setEmail] = useState('');
     const  [password, setPass] = useState('');
 
-    function handleNavigate() {
-        navigation.navigate('Signup');
+    async function handleNavigate() {
+        const loginUser = `
+            query {
+                loginUser (
+                    email: "vinicius-mdias.hotmail.com",
+                ) 
+            }
+        `
+        const response = await api.post("/", graphqlOperation(loginUser));
+
+        console.log(response);
+
+        navigation.navigate('List');
     }
  
     return (
